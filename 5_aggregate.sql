@@ -11,13 +11,16 @@ SELECT tool_type, COUNT(*) AS tool_count, AVG(price) AS avg_price FROM tools WHE
 SELECT id_farm, SUM(price) AS total_price, MAX(price) AS max_price FROM tools WHERE price > 10000 GROUP BY id_farm;
 
 --aggregate employees
-select * from employees
+SELECT employee_role, COUNT(*) AS employee_count, AVG(salary) AS avg_salary FROM employees GROUP BY employee_role;
+SELECT id_farm, SUM(salary) AS total_salary, MAX(salary) AS max_salary FROM employees GROUP BY id_farm;
 
 --aggregate tasks
+SELECT status, COUNT(*) AS task_count, MIN(due_date) AS earliest_due_date FROM tasks GROUP BY status;
+SELECT description, due_date FROM tasks WHERE due_date = (SELECT MIN(due_date) FROM tasks);
 
---aggregate crops
-
-
+--aggregate crops **
+SELECT crop_type, COUNT(*) AS crop_count, AVG(harvest_date - planting_date) AS avg_growth_days FROM crops GROUP BY crop_type;
+SELECT crop_type, MIN(planting_date) AS earliest_planting, MAX(harvest_date) AS latest_harvest FROM crops GROUP BY crop_type;
 
 --aggregate pest_and_disease
 SELECT * FROM pest_and_disease WHERE pest_disease_type IN (SELECT pest_disease_type FROM pest_and_disease GROUP BY pest_disease_type ORDER BY COUNT(*) DESC);
