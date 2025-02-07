@@ -6,3 +6,11 @@ Entities: FARM, weather,
             TOOLS, EMPLOYEES, tasks,
             SALES, ANIMALS, crops,
                               pest and disease
+                              
+![diagram_abstract_TaniaCrisan drawio](https://github.com/user-attachments/assets/87d66b57-e0fe-46d6-a411-e282f5bde99f)
+
+
+
+
+
+![diagram_conceptual_TaniaCrisan drawio](https://github.com/user-attachments/assets/693dccda-fa3a-4f19-95ec-7b59792d3101)
