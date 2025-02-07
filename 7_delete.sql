@@ -38,7 +38,7 @@ DELETE FROM sales WHERE  items LIKE 'C%';
 DELETE FROM sales WHERE quantity IN (SELECT price from animals WHERE sale_date >'2024-09-05');
 
 -- delete crops
-DELETE FROM crops WHERE id = (SELECT MAX(id) FROM crops);
+DELETE FROM crops WHERE id =12;
 DELETE FROM crops WHERE crop_type='Mar verde';
 DELETE FROM crops WHERE growth_stage='Coacere' AND planting_date='2024-07-01';
 
