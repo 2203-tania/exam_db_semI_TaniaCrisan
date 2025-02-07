@@ -11,4 +11,6 @@ Entities: FARM, weather,
 
 
 
+
+
 ![diagram_conceptual_TaniaCrisan drawio](https://github.com/user-attachments/assets/693dccda-fa3a-4f19-95ec-7b59792d3101)
